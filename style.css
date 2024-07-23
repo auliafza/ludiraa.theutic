@@ -1,0 +1,302 @@
+:root {
+    --primary: #ff97ba;
+    --bg: #fffcfd;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg);
+    color: #fff;
+    min-height: 2000px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: rgba(73, 73, 73, 0.8);
+    border-bottom: 1px solid #a50037;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.navbar .navbar-logo {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #fff;
+    font-style: italic;
+}
+
+.navbar .navbar-logo span {
+    color: var(--primary);
+}
+
+.navbar .navbar-nav a{
+    color: #fff;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+    color: var(--primary);
+}
+
+.navbar .navbar-nav a::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid var(--primary);
+    transform: scaleX(0);
+}
+
+.navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.5);
+    transition: 0.2s linear;
+}
+
+.navbar .navbar-extra a{
+    color: #fff;
+    margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+    color: var(--primary);
+}
+
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url('../img/ludira.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #a50037;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.hero .content {
+    padding: 1.4rem 7%;
+    max-width: 60rem;
+}
+
+.hero .content h1{
+    font-size: 5rem;
+    color: #a50037;
+    text-shadow: 1px 1px 3px rgba(1,1,3,0.5);
+}
+
+.hero .content p {
+    font-size: 1.6rem;
+    margin-top: 0.5rem;
+    line-height: 1.4;
+    font-weight: 300;
+}
+
+/* Cincin Section */
+
+.cincin {
+    padding: 8rem 7% 1.4rem;
+    color: #a50037;
+}
+
+.cincin h2 {
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 2rem;
+}
+
+.cincin .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    margin-top: 4rem;
+}
+
+.cincin .product-card {
+    text-align: center;
+    border: 1px solid #666;
+    padding: 2rem;
+}
+
+.cincin .product-image img {
+    height: 25rem;
+}
+
+.cincin .product-content {
+    font-weight: 700;
+    font-size: 1.4rem;
+
+}
+.cincin .product-price {
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+/* Gelang Section */
+
+.gelang {
+    padding: 8rem 7% 1.4rem;
+    color: #a50037;
+}
+
+.gelang h2 {
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 2rem;
+}
+
+.gelang .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    margin-top: 4rem;
+}
+
+.gelang .product-card {
+    text-align: center;
+    border: 1px solid #666;
+    padding: 2rem;
+}
+
+.gelang .product-image img {
+    height: 25rem;
+}
+
+.gelang .product-content {
+    font-weight: 700;
+    font-size: 1.4rem;
+
+}
+.gelang .product-price {
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+/* Strap Section */
+
+.strap {
+    padding: 8rem 7% 1.4rem;
+    color: #a50037;
+}
+
+.strap h2 {
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 2rem;
+}
+
+.strap .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    margin-top: 4rem;
+}
+
+.strap .product-card {
+    text-align: center;
+    border: 1px solid #666;
+    padding: 2rem;
+}
+
+.strap .product-image img {
+    height: 25rem;
+}
+
+.strap .product-content {
+    font-weight: 700;
+    font-size: 1.4rem;
+
+}
+.strap .product-price {
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+/* Others Section */
+
+.others {
+    padding: 8rem 7% 1.4rem;
+    color: #a50037;
+}
+
+.others h2 {
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 2rem;
+}
+
+.others .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    margin-top: 4rem;
+}
+
+.others .product-card {
+    text-align: center;
+    border: 1px solid #666;
+    padding: 2rem;
+}
+
+.others .product-image img {
+    height: 25rem;
+}
+
+.others .product-content {
+    font-weight: 700;
+    font-size: 1.4rem;
+
+}
+.others .product-price {
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+
+/* Media Queries */
+
+/* Laptop */
+@media (max-width: 1366px) {
+    html{
+        font-size: 75%;
+    }
+}
+
+/* Tablet */
+@media (max-width: 758px) {
+    html{
+        font-size: 62.5%;
+}
+
+/* Mobile */
+@media (max-width: 450px) {
+    html{
+        font-size: 55%;
+    }
+}
+}
